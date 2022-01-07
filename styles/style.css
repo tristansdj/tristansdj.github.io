@@ -1,0 +1,47 @@
+html {
+    font-size: 10px; /*Comments in CSS*/
+    font-family: "Open sans", sans-serif;
+    background-color: lightseagreen;
+}
+
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #FF9500;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+
+p {
+    color: red;
+    width: 500px;
+    border: 1px solid black;
+}
+
+ul, h1 {
+    color: green;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    text-shadow: 3px 3px 10px black;
+}
+
+a:hover {
+    background-color: lightblue;
+}
+
+p {
+    font-size: 25px;
+    line-height: 1;
+    letter-spacing: 10px;
+}
+
+img#my-image {
+    display:block;
+    margin: 0 auto;
+    width: 50%;
+}

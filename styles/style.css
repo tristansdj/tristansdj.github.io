@@ -45,3 +45,11 @@ img#my-image {
     margin: 0 auto;
     width: 50%;
 }
+
+#test1 {
+    font-style: italic;
+}
+
+#test2 {
+    font-weight: bold;
+}

@@ -1,28 +1,58 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en-US">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Tristan Sarton du Jonchay">
+        <meta name="description" content="Tristan's simple website describes his passions, life goals,
+            and what he does in life. Description metadata can be used to improve the site's Search 
+            Engine Optimization (SEO). In particular, the description is displayed on the web browser
+            after a web search through a search engine.">
+        <meta property="og:description" content="Tristan's simple website describes his passions, life goals,
+            and what he does in life. Description metadata can be used to improve the site's Search 
+            Engine Optimization (SEO). In particular, the description is displayed on the web browser
+            after a web search through a search engine.">
+        <meta property="og:title" content="Tristan's Web2 site">
+        <meta name="twitter:title" content="Tristan's Web2 site">
         <title>My Test Site</title>
         <link href="styles/style.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Open+Sans:wght@300&family=Roboto:wght@100&family=The+Nautigal&display=swap" rel="stylesheet" type="text/css">
+        <!--Adding favicons - assume you have a favicon in images folder-->
+        <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+        <!--JavaScript files can be tied to an html document either in the head with the boolean attribute "defer" or at the end of the <body> element without "defer" attribute-->
+        <!--This is because a browser should first parse an HTML document before loading the javascript code-->
+        <script src="scripts/main.js" type="text/javascript" defer></script>
     </head>
     <body>
         <!--This is a comment in HTML-->
-        <h1>Hi! I'm Tristan</h1>
-        <img id="my-image" src="images/Tristan-in-the-wild.jpeg" alt="Tristan near a waterfall">
-        <p>Who wants to discuss love?</p>
+        <ul>
+            <li>Home</li>
+            <li><a href="pictures.html" title="See the pictures from my trips">Pictures</a></li>
+            <li><a href="projects.html" title="See my cool projects!">Projects</a></li>
+            <li><a href="social.html" title="See how social I am!">Social</a></li>
+        </ul>
+        <h1>Homepage</h1>
+        <a href="https://www.coindesk.com/" title="A link to coindesk"><img id="my-image" src="images/Tristan-in-the-wild.jpeg" alt="Tristan near a waterfall"></a>
+        <p>Who wants to <span id="test2">discuss</span> <em>love</em>with me?</p>
         <p>
-            What I like to discuss:
+            What I <strong>like</strong> to <span id="test1">discuss</span>:
             <ul>
-                <li>Blockchain</li>
+                <!--<b> and <i> elements are "presentational elements," while elements such as <strong> and <em> are semantic elements
+                    which provide meaning to search engines and screen readers (for visually impaired people)-->
+                <li><b><i>Blockchain</i></b></li>
                 <li>space</li>
                 <li>Finance</li>
             </ul>
         </p>
-        A link to <a href="https://www.coindesk.com/">coindesk</a>
+        A link to <a href="https://www.coindesk.com/" title="The link's title when the mouse hovers over the link">coindesk</a>
         <button>Change user</button>
-        <script src="scripts/main.js" type="text/javascript"></script>
+        <!--<script src="scripts/main.js" type="text/javascript" defer></script>-->
+        <p>
+            <a href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US"
+            download="firefox-latest-64bit-installer.exe">
+                Download Latest Firefox for Windows (64-bit) (English, US)
+            </a>
+        </p>
     </body>
 </html>
